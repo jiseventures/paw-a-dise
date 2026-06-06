@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+  <title>Paw-a-dise</title>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./src/styles.css" />
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.180.0/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.180.0/examples/jsm/"
+      }
+    }
+  </script>
+</head>
+<body>
+  <div id="boot-overlay">
+    <div class="boot-scene">
+      <img id="boot-image" class="boot-image" alt="Aurora drifting across a star field" />
+      <div class="boot-scene__veil"></div>
+      <div class="boot-card">
+        <small class="boot-card__eyebrow">Aurora reveal</small>
+        <h1>Paw-a-dise</h1>
+        <p id="boot-status">Loading Aurora, village skies, and glowing eggs…</p>
+        <button id="start-game" class="primary-btn" hidden>Start Game</button>
+      </div>
+    </div>
+  </div>
+  <main id="game-root" hidden></main>
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>
