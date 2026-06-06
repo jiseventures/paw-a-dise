@@ -191,3 +191,19 @@ img { display: block; max-width: 100%; }
 @media (max-width: 920px) { .village-view, .profile-layout { grid-template-columns: 1fr; } .village-stage { min-height: 46vh; } .metric-grid, .reward-grid, .shop-grid, .collection-grid, .profile-stats, .power-bar, .build-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 680px) { .screen { padding-left: 12px; padding-right: 12px; } .top-bar, .puzzle-top { flex-wrap: wrap; } .currency-strip { grid-auto-flow: row; width: 100%; grid-template-columns: repeat(2, minmax(0, 1fr)); } .board-shell { width: 100%; } .village-building { width: clamp(82px, 20vw, 108px); padding: 10px 8px; } .village-building strong { font-size: 12px; } .village-animal { width: clamp(66px, 19vw, 92px); } .metric-grid, .metric-grid--wide, .reward-grid, .shop-grid, .collection-grid, .profile-stats, .power-bar { grid-template-columns: 1fr 1fr; } .reveal-card { grid-template-columns: 1fr; text-align: center; } .bottom-nav { gap: 8px; padding: 8px; } .bottom-nav__item { padding: 12px 8px; font-size: 12px; } }
 @media (max-width: 440px) { .metric-grid, .metric-grid--wide, .reward-grid, .shop-grid, .collection-grid, .profile-stats, .power-bar, .build-grid { grid-template-columns: 1fr; } .loading-hero { min-height: 86vh; } .village-sidecard, .map-shell, .collection-shell, .profile-shell, .shop-shell, .settings-shell { padding: 18px 14px; } }
+
+/* ── Village stage background + layout fix ── */
+.village-stage {
+  background-image: url('https://static.seeles.ai/media/assets/565b432ca70241ed8f04cdbb262ed481_1780722110411188200_a10e5a24668456ad57d06792b90b6ea1_17807221049827748708342842997105.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+@media (min-width: 921px) {
+  .village-view {
+    grid-template-columns: minmax(0, 1.8fr) minmax(260px, 0.8fr);
+  }
+  .village-stage {
+    min-height: 65vh;
+  }
+}
